@@ -2,8 +2,8 @@ const Boom = require('@hapi/boom')
 const Photos = require('./lib/photos')
 let photos
 
-const register = async function (server, options = {}) {
-  const { path = '/photos', originalType = 'original', alternativeSizes = [], maxMb, minKb, payloadMaxBytes, region, apiVersion, bucket, tags = [], enabled = true } = options
+const register = async function (server, opts = {}) {
+  const { path = '/photos', originalType = 'original', alternativeSizes = [], maxMb, minKb, payloadMaxBytes, region, apiVersion, bucket, options = {}, enabled = true } = opts
 
   const sizesAllowed = alternativeSizes.map(({ type: size }) => size)
   sizesAllowed.push(originalType)
@@ -27,7 +27,7 @@ const register = async function (server, options = {}) {
     method: 'GET',
     path: `${path}/{size}/{filename}`,
     handler,
-    options: { tags }
+    options
   })
 }
 
