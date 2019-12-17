@@ -1,4 +1,5 @@
 const Boom = require('@hapi/boom')
+const pkg = require('./package.json')
 const Photos = require('./lib/photos')
 let photos
 
@@ -37,16 +38,16 @@ async function until (fn) {
   }
 }
 
-exports.plugin = {
-  name: 'defra-aws-photos',
-  register,
-  once: true,
-  pkg: require('./package.json')
-}
-
 exports.Photos = Photos
 
 exports.getPhotos = async () => {
   await until(() => photos)
   return photos
+}
+
+exports.plugin = {
+  name: pkg.name,
+  register,
+  once: true,
+  pkg
 }
