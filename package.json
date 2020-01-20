@@ -1,6 +1,6 @@
 {
   "name": "defra-hapi-photos",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hapi plugin to upload, download and resize photos",
   "author": "Department for Environment, Food & Rural Affairs",
   "license": "SEE LICENSE IN LICENSE",
@@ -29,18 +29,18 @@
   },
   "homepage": "https://github.com/ajaxscape/defra-hapi-photos#readme",
   "dependencies": {
-    "@hapi/boom": "^8.0.1",
-    "@hapi/joi": "^16.1.8",
-    "aws-sdk": "^2.596.0",
+    "@hapi/boom": "^9.0.0",
+    "@hapi/joi": "^17.1.0",
+    "aws-sdk": "^2.606.0",
     "defra-logging-facade": "git+https://github.com/DEFRA/defra-logging-facade.git#master",
-    "sharp": "^0.23.4"
+    "sharp": "^0.24.0"
   },
   "devDependencies": {
-    "@hapi/code": "^7.0.0",
-    "@hapi/lab": "^21.0.0",
+    "@hapi/code": "^8.0.1",
+    "@hapi/lab": "^22.0.3",
     "codeclimate-test-reporter": "0.5.1",
     "eslint": "^6.8.0",
-    "sinon": "^7.5.0",
+    "sinon": "^8.1.0",
     "standard": "^14.3.1"
   }
 }
