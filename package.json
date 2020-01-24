@@ -31,7 +31,7 @@
   "dependencies": {
     "@hapi/boom": "^9.0.0",
     "@hapi/joi": "^17.1.0",
-    "aws-sdk": "^2.606.0",
+    "aws-sdk": "^2.609.0",
     "defra-logging-facade": "git+https://github.com/DEFRA/defra-logging-facade.git#master",
     "sharp": "^0.24.0"
   },
@@ -40,7 +40,7 @@
     "@hapi/lab": "^22.0.3",
     "codeclimate-test-reporter": "0.5.1",
     "eslint": "^6.8.0",
-    "sinon": "^8.1.0",
+    "sinon": "^8.1.1",
     "standard": "^14.3.1"
   }
 }
