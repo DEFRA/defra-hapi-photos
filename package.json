@@ -1,6 +1,6 @@
 {
   "name": "defra-hapi-photos",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Hapi plugin to upload, download and resize photos",
   "author": "Department for Environment, Food & Rural Affairs",
   "license": "SEE LICENSE IN LICENSE",
